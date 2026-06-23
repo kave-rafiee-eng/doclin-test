@@ -1,0 +1,7 @@
+ipykernel
+docling
+graphrag
+pyPDF2
+token-count
+fastapi
+uvicorn[standard]
