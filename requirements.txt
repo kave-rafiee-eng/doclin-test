@@ -5,3 +5,4 @@ pyPDF2
 token-count
 fastapi
 uvicorn[standard]
+tiktoken

@@ -23,27 +23,3 @@ graphrag index
 
 graphrag query "What is document about ?"
 
-graphrag query "what is dv4 fault code in yaskawa l1000a ?" --method local
-
-graphrag query "what is CPF02 fault ?" --method local
-
-graphrag query "how to set  Carrier Frequency ?" --method local
-
-graphrag query "how to set Speed References 1 to 8?" --method local
-
-graphrag query "how i can disable dv4 fault ? " --method local
-
-graphrag query "i want Terminal S3 be a refrence speed input " --method local
-
-graphrag query "tell me about Motor Acceleration Time and how change it" --method local
-
-graphrag query "A1-02" --method local
-
-graphrag query "b4-01" --method local
-
-
-
- Encoder Selection
-
-  Terminal S3
-

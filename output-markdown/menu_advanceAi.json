@@ -1,0 +1,4885 @@
+[
+  {
+    "id": "10",
+    "label": "Debug",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Information"
+    ],
+    "description": "Enable debug mode to connect to the Windows software and disable it for troubleshooting the software to ensure normal operation.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": ""
+      },
+      {
+        "value": "En",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "label": "Offset_Stop",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "mm",
+    "minValue": 0,
+    "maxValue": 255,
+    "step": 1
+  },
+  {
+    "id": "101",
+    "label": "Offset_Mode",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": ""
+      },
+      {
+        "value": "En",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "label": "Based_On",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "CF3_Sensor",
+        "description": ""
+      },
+      {
+        "value": "Encoder",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "label": "_1CF_Delay_Emg",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 5,
+    "step": 0.05
+  },
+  {
+    "id": "104",
+    "label": "_1CF_Delay_Level",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 5,
+    "step": 0.05
+  },
+  {
+    "id": "105",
+    "label": "Num Of Stops",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>General",
+      "main>Quick Set"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "N",
+    "minValue": 2,
+    "maxValue": 60,
+    "step": 1
+  },
+  {
+    "id": "106",
+    "label": "Travel Time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set",
+      "main>Full Set>General"
+    ],
+    "description": "The maximum allowed time for the elevator to remain in motion after detecting the distance sensor is exceeded, if it remains in motion beyond the set time, a distance error occurs and the elevator stops forcibly.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 200,
+    "step": 1
+  },
+  {
+    "id": "107",
+    "label": "Level_time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set",
+      "main>Full Set>General"
+    ],
+    "description": "The maximum allowed time for the elevator to move after passing the floor sensor, if it remains in motion beyond the set time, an error occurs and the elevator stops with a forced stop. To clear the error, a hardware restart is required.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 50,
+    "step": 1
+  },
+  {
+    "id": "11",
+    "label": "QCmode",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Information"
+    ],
+    "description": "Activating QC mode: This mode is only used by the manufacturer on the simulator. Make sure it is disabled for public use.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": "غیر فعال"
+      },
+      {
+        "value": "En",
+        "description": "فعال"
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "label": "End D Time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "If an error occurs after several open and close attempts and does not repeat, and if the number of consecutive errors exceeds the set value, the error will be retained and the buttons will be reset once.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 10,
+    "step": 1
+  },
+  {
+    "id": "111",
+    "label": "Ura_Timeout",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "If the URA does not close within the set time, an error is logged and the door is reopened and closed again.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 10,
+    "step": 1
+  },
+  {
+    "id": "112",
+    "label": "BaseMent",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>General"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "N",
+    "minValue": 0,
+    "maxValue": 7,
+    "step": 1
+  },
+  {
+    "id": "117",
+    "label": "prog_Mode",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Sevice"
+    ],
+    "description": "Set the main mode for service settings. If set to auto, the board automatically configures settings according to the specified type. In Custom mode, service can be configured separately for each floor.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Auto",
+        "description": "اتوماتیک"
+      },
+      {
+        "value": "Costom",
+        "description": "دستی"
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "label": "Service_Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Sevice"
+    ],
+    "description": "Set the type of elevator service for all floors",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Full Collective",
+        "description": ""
+      },
+      {
+        "value": "Collective DN",
+        "description": ""
+      },
+      {
+        "value": "Collective UP",
+        "description": ""
+      },
+      {
+        "value": "Collective U/D",
+        "description": ""
+      },
+      {
+        "value": "Keypad",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "label": "Door_Select",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Sevice"
+    ],
+    "description": "If the floors have more than one door and each door has a separate control panel, set it to \"en\".",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": ""
+      },
+      {
+        "value": "En",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "label": "Park Time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "M",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 1
+  },
+  {
+    "id": "121",
+    "label": "69 Debounce",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "Setting hardware debounce for input 110 volts number 69; debounce means the initial instability of the connection. To eliminate these mechanical noises at the hardware level.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 3,
+    "step": 0.1
+  },
+  {
+    "id": "122",
+    "label": "68 Debounce",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "Setting hardware debounce for input 110 volts number 68; debounce means initial connection instability. To eliminate these mechanical noises at the hardware level.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 3,
+    "step": 0.1
+  },
+  {
+    "id": "123",
+    "label": "Close Timeout",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "The maximum time for completing the closure and completion of inputs 68, 69, and 66, if the door is not closed after the set time, an error is recorded and the door is reopened and closed again.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 1
+  },
+  {
+    "id": "124",
+    "label": "Open Time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Door Time",
+      "main>Full Set>General>Door>Door Time"
+    ],
+    "description": "Set the door opening duration considering that the board does not have feedback on the complete opening of the door, adjust this parameter after measurement.",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 1
+  },
+  {
+    "id": "125",
+    "label": "Control Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Door"
+    ],
+    "description": "Adjust the feedback mechanism for the door being open or closed",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Loaded",
+        "description": ""
+      },
+      {
+        "value": "68",
+        "description": ""
+      },
+      {
+        "value": "69",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "126",
+    "label": "NumOfDoor",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Door"
+    ],
+    "description": "Adjust the number of cabin doors",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "1",
+        "description": "یک درب"
+      },
+      {
+        "value": "2",
+        "description": ""
+      },
+      {
+        "value": "3",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "label": "Talk Volume",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Sound",
+      "main>Full Set>General>Sound"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "128",
+    "label": "Music Volume",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Sound",
+      "main>Full Set>General>Sound"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "129",
+    "label": "Gang Select",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Sound",
+      "main>Full Set>General>Sound"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "OFF",
+        "description": ""
+      },
+      {
+        "value": "1",
+        "description": ""
+      },
+      {
+        "value": "2",
+        "description": ""
+      },
+      {
+        "value": "3",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "label": "Welcome Floor",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Sound",
+      "main>Full Set>General>Sound"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "OFF",
+        "description": ""
+      },
+      {
+        "value": "1",
+        "description": ""
+      },
+      {
+        "value": "2",
+        "description": ""
+      },
+      {
+        "value": "3",
+        "description": ""
+      },
+      {
+        "value": "4",
+        "description": ""
+      },
+      {
+        "value": "5",
+        "description": ""
+      },
+      {
+        "value": "6",
+        "description": ""
+      },
+      {
+        "value": "7",
+        "description": ""
+      },
+      {
+        "value": "8",
+        "description": ""
+      },
+      {
+        "value": "9",
+        "description": ""
+      },
+      {
+        "value": "10",
+        "description": ""
+      },
+      {
+        "value": "11",
+        "description": ""
+      },
+      {
+        "value": "12",
+        "description": ""
+      },
+      {
+        "value": "13",
+        "description": ""
+      },
+      {
+        "value": "14",
+        "description": ""
+      },
+      {
+        "value": "15",
+        "description": ""
+      },
+      {
+        "value": "16",
+        "description": ""
+      },
+      {
+        "value": "17",
+        "description": ""
+      },
+      {
+        "value": "18",
+        "description": ""
+      },
+      {
+        "value": "19",
+        "description": ""
+      },
+      {
+        "value": "20",
+        "description": ""
+      },
+      {
+        "value": "21",
+        "description": ""
+      },
+      {
+        "value": "22",
+        "description": ""
+      },
+      {
+        "value": "23",
+        "description": ""
+      },
+      {
+        "value": "24",
+        "description": ""
+      },
+      {
+        "value": "25",
+        "description": ""
+      },
+      {
+        "value": "26",
+        "description": ""
+      },
+      {
+        "value": "27",
+        "description": ""
+      },
+      {
+        "value": "28",
+        "description": ""
+      },
+      {
+        "value": "29",
+        "description": ""
+      },
+      {
+        "value": "30",
+        "description": ""
+      },
+      {
+        "value": "31",
+        "description": ""
+      },
+      {
+        "value": "32",
+        "description": ""
+      },
+      {
+        "value": "33",
+        "description": ""
+      },
+      {
+        "value": "34",
+        "description": ""
+      },
+      {
+        "value": "35",
+        "description": ""
+      },
+      {
+        "value": "36",
+        "description": ""
+      },
+      {
+        "value": "37",
+        "description": ""
+      },
+      {
+        "value": "38",
+        "description": ""
+      },
+      {
+        "value": "39",
+        "description": ""
+      },
+      {
+        "value": "40",
+        "description": ""
+      },
+      {
+        "value": "41",
+        "description": ""
+      },
+      {
+        "value": "42",
+        "description": ""
+      },
+      {
+        "value": "43",
+        "description": ""
+      },
+      {
+        "value": "44",
+        "description": ""
+      },
+      {
+        "value": "45",
+        "description": ""
+      },
+      {
+        "value": "46",
+        "description": ""
+      },
+      {
+        "value": "47",
+        "description": ""
+      },
+      {
+        "value": "48",
+        "description": ""
+      },
+      {
+        "value": "49",
+        "description": ""
+      },
+      {
+        "value": "50",
+        "description": ""
+      },
+      {
+        "value": "51",
+        "description": ""
+      },
+      {
+        "value": "52",
+        "description": ""
+      },
+      {
+        "value": "53",
+        "description": ""
+      },
+      {
+        "value": "54",
+        "description": ""
+      },
+      {
+        "value": "55",
+        "description": ""
+      },
+      {
+        "value": "56",
+        "description": ""
+      },
+      {
+        "value": "57",
+        "description": ""
+      },
+      {
+        "value": "58",
+        "description": ""
+      },
+      {
+        "value": "59",
+        "description": ""
+      },
+      {
+        "value": "60",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "131",
+    "label": "Fire_Floor",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Floor",
+      "main>Full Set>General>Floor"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "1",
+        "description": ""
+      },
+      {
+        "value": "2",
+        "description": ""
+      },
+      {
+        "value": "3",
+        "description": ""
+      },
+      {
+        "value": "4",
+        "description": ""
+      },
+      {
+        "value": "5",
+        "description": ""
+      },
+      {
+        "value": "6",
+        "description": ""
+      },
+      {
+        "value": "7",
+        "description": ""
+      },
+      {
+        "value": "8",
+        "description": ""
+      },
+      {
+        "value": "9",
+        "description": ""
+      },
+      {
+        "value": "10",
+        "description": ""
+      },
+      {
+        "value": "11",
+        "description": ""
+      },
+      {
+        "value": "12",
+        "description": ""
+      },
+      {
+        "value": "13",
+        "description": ""
+      },
+      {
+        "value": "14",
+        "description": ""
+      },
+      {
+        "value": "15",
+        "description": ""
+      },
+      {
+        "value": "16",
+        "description": ""
+      },
+      {
+        "value": "17",
+        "description": ""
+      },
+      {
+        "value": "18",
+        "description": ""
+      },
+      {
+        "value": "19",
+        "description": ""
+      },
+      {
+        "value": "20",
+        "description": ""
+      },
+      {
+        "value": "21",
+        "description": ""
+      },
+      {
+        "value": "22",
+        "description": ""
+      },
+      {
+        "value": "23",
+        "description": ""
+      },
+      {
+        "value": "24",
+        "description": ""
+      },
+      {
+        "value": "25",
+        "description": ""
+      },
+      {
+        "value": "26",
+        "description": ""
+      },
+      {
+        "value": "27",
+        "description": ""
+      },
+      {
+        "value": "28",
+        "description": ""
+      },
+      {
+        "value": "29",
+        "description": ""
+      },
+      {
+        "value": "30",
+        "description": ""
+      },
+      {
+        "value": "31",
+        "description": ""
+      },
+      {
+        "value": "32",
+        "description": ""
+      },
+      {
+        "value": "33",
+        "description": ""
+      },
+      {
+        "value": "34",
+        "description": ""
+      },
+      {
+        "value": "35",
+        "description": ""
+      },
+      {
+        "value": "36",
+        "description": ""
+      },
+      {
+        "value": "37",
+        "description": ""
+      },
+      {
+        "value": "38",
+        "description": ""
+      },
+      {
+        "value": "39",
+        "description": ""
+      },
+      {
+        "value": "40",
+        "description": ""
+      },
+      {
+        "value": "41",
+        "description": ""
+      },
+      {
+        "value": "42",
+        "description": ""
+      },
+      {
+        "value": "43",
+        "description": ""
+      },
+      {
+        "value": "44",
+        "description": ""
+      },
+      {
+        "value": "45",
+        "description": ""
+      },
+      {
+        "value": "46",
+        "description": ""
+      },
+      {
+        "value": "47",
+        "description": ""
+      },
+      {
+        "value": "48",
+        "description": ""
+      },
+      {
+        "value": "49",
+        "description": ""
+      },
+      {
+        "value": "50",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "132",
+    "label": "Park_Floor",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Quick Set>Floor",
+      "main>Full Set>General>Floor"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "1",
+        "description": ""
+      },
+      {
+        "value": "2",
+        "description": ""
+      },
+      {
+        "value": "3",
+        "description": ""
+      },
+      {
+        "value": "4",
+        "description": ""
+      },
+      {
+        "value": "5",
+        "description": ""
+      },
+      {
+        "value": "6",
+        "description": ""
+      },
+      {
+        "value": "7",
+        "description": ""
+      },
+      {
+        "value": "8",
+        "description": ""
+      },
+      {
+        "value": "9",
+        "description": ""
+      },
+      {
+        "value": "10",
+        "description": ""
+      },
+      {
+        "value": "11",
+        "description": ""
+      },
+      {
+        "value": "12",
+        "description": ""
+      },
+      {
+        "value": "13",
+        "description": ""
+      },
+      {
+        "value": "14",
+        "description": ""
+      },
+      {
+        "value": "15",
+        "description": ""
+      },
+      {
+        "value": "16",
+        "description": ""
+      },
+      {
+        "value": "17",
+        "description": ""
+      },
+      {
+        "value": "18",
+        "description": ""
+      },
+      {
+        "value": "19",
+        "description": ""
+      },
+      {
+        "value": "20",
+        "description": ""
+      },
+      {
+        "value": "21",
+        "description": ""
+      },
+      {
+        "value": "22",
+        "description": ""
+      },
+      {
+        "value": "23",
+        "description": ""
+      },
+      {
+        "value": "24",
+        "description": ""
+      },
+      {
+        "value": "25",
+        "description": ""
+      },
+      {
+        "value": "26",
+        "description": ""
+      },
+      {
+        "value": "27",
+        "description": ""
+      },
+      {
+        "value": "28",
+        "description": ""
+      },
+      {
+        "value": "29",
+        "description": ""
+      },
+      {
+        "value": "30",
+        "description": ""
+      },
+      {
+        "value": "31",
+        "description": ""
+      },
+      {
+        "value": "32",
+        "description": ""
+      },
+      {
+        "value": "33",
+        "description": ""
+      },
+      {
+        "value": "34",
+        "description": ""
+      },
+      {
+        "value": "35",
+        "description": ""
+      },
+      {
+        "value": "36",
+        "description": ""
+      },
+      {
+        "value": "37",
+        "description": ""
+      },
+      {
+        "value": "38",
+        "description": ""
+      },
+      {
+        "value": "39",
+        "description": ""
+      },
+      {
+        "value": "40",
+        "description": ""
+      },
+      {
+        "value": "41",
+        "description": ""
+      },
+      {
+        "value": "42",
+        "description": ""
+      },
+      {
+        "value": "43",
+        "description": ""
+      },
+      {
+        "value": "44",
+        "description": ""
+      },
+      {
+        "value": "45",
+        "description": ""
+      },
+      {
+        "value": "46",
+        "description": ""
+      },
+      {
+        "value": "47",
+        "description": ""
+      },
+      {
+        "value": "48",
+        "description": ""
+      },
+      {
+        "value": "49",
+        "description": ""
+      },
+      {
+        "value": "50",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "133",
+    "label": "Wating_Floor",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Floor",
+      "main>Full Set>General>Floor"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "S",
+    "minValue": 0,
+    "maxValue": 200,
+    "step": 1
+  },
+  {
+    "id": "134",
+    "label": "Time To Park",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Floor",
+      "main>Full Set>General>Floor"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "M",
+    "minValue": 0,
+    "maxValue": 60,
+    "step": 1
+  },
+  {
+    "id": "137",
+    "label": "Emergency_Dir",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>General>Emergency"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "UP",
+        "description": ""
+      },
+      {
+        "value": "DOWN",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "label": "Type_Elevator",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance"
+    ],
+    "description": "The choice of elevator type directly affects all settings and the operation of the board.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "3VF",
+        "description": " اسانسور دارای درایو"
+      },
+      {
+        "value": "HYD",
+        "description": "اسانسور هیدرولیک"
+      },
+      {
+        "value": "2Speed",
+        "description": "اسانسور دو سرعته قدیمی"
+      },
+      {
+        "value": "HEVOS",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "label": "El_Speed",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance"
+    ],
+    "description": "The elevator speed must be adjusted to match the actual speed of the motor.",
+    "description_for_ai": "",
+    "unit": "m/s",
+    "minValue": 0,
+    "maxValue": 4,
+    "step": 0.1
+  },
+  {
+    "id": "16",
+    "label": "relay_off_delay",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Timer Setting>Relay Time"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "",
+    "minValue": 0,
+    "maxValue": 0,
+    "step": 1
+  },
+  {
+    "id": "17",
+    "label": "Standby_Time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set",
+      "main>Full Set>Advance>Timer Setting"
+    ],
+    "description": "Set the time to enter standby mode after the specified duration, and the board will enter low power mode. The segments use the settings related to this mode and dim, and the cabin light also turns off.",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 1000,
+    "step": 5
+  },
+  {
+    "id": "18",
+    "label": "_1CF_Delay_All",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Timer Setting"
+    ],
+    "description": "Create a delay on 1cf inputs for all classes",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 5,
+    "step": 0.05
+  },
+  {
+    "id": "19",
+    "label": "TC_ReleaseDel",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Timer Setting"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 10,
+    "step": 0.1
+  },
+  {
+    "id": "20",
+    "label": "UDReleaseDel",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Timer Setting"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 10,
+    "step": 0.1
+  },
+  {
+    "id": "21",
+    "label": "PB_Debunce",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Timer Setting"
+    ],
+    "description": "Setting debounce time on cabin and floor chassis: If there is noise on the chassis, the effect of the noise can be eliminated by increasing the debounce time.",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0.1,
+    "maxValue": 2,
+    "step": 0.01
+  },
+  {
+    "id": "23",
+    "label": "dublex_pb_type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Doublex"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Common",
+        "description": ""
+      },
+      {
+        "value": "Separate",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "label": "Motor_Pol",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Polarity"
+    ],
+    "description": "Motor direction setting, if needed, this setting can be used to change the motor direction.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Same",
+        "description": "بدون تغییر"
+      },
+      {
+        "value": "Reverse",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "label": "Enc_Pol",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Polarity"
+    ],
+    "description": "Adjust the direction of the encoder pulses (inputs a and b). In case of an encoder reversal error, change this setting or reverse the hardware inputs a and b.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Same",
+        "description": ""
+      },
+      {
+        "value": "Reverse",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "label": "S/A_Learn_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 1,
+    "maxValue": 50,
+    "step": 1
+  },
+  {
+    "id": "33",
+    "label": "S/A_Rev_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 10,
+    "maxValue": 30,
+    "step": 1
+  },
+  {
+    "id": "34",
+    "label": "S/A_Max_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 10,
+    "maxValue": 100,
+    "step": 1
+  },
+  {
+    "id": "35",
+    "label": "S/A_Med_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 1,
+    "maxValue": 70,
+    "step": 1
+  },
+  {
+    "id": "36",
+    "label": "S/A_Slow_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 1,
+    "maxValue": 20,
+    "step": 1
+  },
+  {
+    "id": "37",
+    "label": "S/A_Level_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 1,
+    "maxValue": 10,
+    "step": 1
+  },
+  {
+    "id": "38",
+    "label": "S/A_Lowest_Sp",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>S/A Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0.1,
+    "maxValue": 5,
+    "step": 0.1
+  },
+  {
+    "id": "39",
+    "label": "Par_Learn_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "label": "Par_Rev_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "label": "Par_Max_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "label": "Par_Med_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "label": "Par_Slow_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "label": "Par_Level_SP",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Par Speeds"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "MS 1",
+        "description": ""
+      },
+      {
+        "value": "MS 2",
+        "description": ""
+      },
+      {
+        "value": "MS 3",
+        "description": ""
+      },
+      {
+        "value": "MS 4",
+        "description": ""
+      },
+      {
+        "value": "MS 5",
+        "description": ""
+      },
+      {
+        "value": "MS 6",
+        "description": ""
+      },
+      {
+        "value": "MS 7",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "label": "Drive_Connection",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive"
+    ],
+    "description": "Setting the connection type of the board to the drive",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Parallel",
+        "description": ""
+      },
+      {
+        "value": "Analog",
+        "description": ""
+      },
+      {
+        "value": "MOD-HD5L",
+        "description": ""
+      },
+      {
+        "value": "MOD-L1000A",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "label": "BaudRate",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Rs485"
+    ],
+    "description": "Configure RS485 serial connection rate",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "1200",
+        "description": ""
+      },
+      {
+        "value": "4800",
+        "description": ""
+      },
+      {
+        "value": "9600",
+        "description": ""
+      },
+      {
+        "value": "19200",
+        "description": ""
+      },
+      {
+        "value": "38400",
+        "description": ""
+      },
+      {
+        "value": "115200",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "label": "Format",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Drive>Rs485"
+    ],
+    "description": "Set serial communication format",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "8-N-1",
+        "description": "8-bit data, no parity, 1 stop bit"
+      },
+      {
+        "value": "8-N-2",
+        "description": "8-bit data, no parity, 2 stop bit"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "label": "Phase_Errors",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Phase Control"
+    ],
+    "description": "Activating and deactivating errors related to phase and voltage control",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": "غیر فعال"
+      },
+      {
+        "value": "En",
+        "description": "فعال"
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "Reverse",
+        "description": ""
+      },
+      {
+        "value": "UNB",
+        "description": ""
+      },
+      {
+        "value": "Lost",
+        "description": ""
+      },
+      {
+        "value": "over-V",
+        "description": ""
+      },
+      {
+        "value": "under-V",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "label": "Floor Setting",
+    "type": "array of setting groups. Each group may contain integer input settings and single-option selection settings. The user first selects a group item and then edits the settings within that group",
+    "navigationToMenu": [
+      "main>Full Set"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "settings": [
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Seg L",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "?",
+            "description": ""
+          },
+          {
+            "value": "0",
+            "description": ""
+          },
+          {
+            "value": "1",
+            "description": ""
+          },
+          {
+            "value": "2",
+            "description": ""
+          },
+          {
+            "value": "3",
+            "description": ""
+          },
+          {
+            "value": "4",
+            "description": ""
+          },
+          {
+            "value": "5",
+            "description": ""
+          },
+          {
+            "value": "6",
+            "description": ""
+          },
+          {
+            "value": "7",
+            "description": ""
+          },
+          {
+            "value": "8",
+            "description": ""
+          },
+          {
+            "value": "9",
+            "description": ""
+          },
+          {
+            "value": "G",
+            "description": ""
+          },
+          {
+            "value": "P",
+            "description": ""
+          },
+          {
+            "value": "B",
+            "description": ""
+          },
+          {
+            "value": "r",
+            "description": ""
+          },
+          {
+            "value": "a",
+            "description": ""
+          },
+          {
+            "value": "b",
+            "description": ""
+          },
+          {
+            "value": "c",
+            "description": ""
+          },
+          {
+            "value": "d",
+            "description": ""
+          },
+          {
+            "value": "e",
+            "description": ""
+          },
+          {
+            "value": "f",
+            "description": ""
+          },
+          {
+            "value": "g",
+            "description": ""
+          },
+          {
+            "value": "h",
+            "description": ""
+          },
+          {
+            "value": "-",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Seg R",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "?",
+            "description": ""
+          },
+          {
+            "value": "0",
+            "description": ""
+          },
+          {
+            "value": "1",
+            "description": "سیسیسی"
+          },
+          {
+            "value": "2",
+            "description": ""
+          },
+          {
+            "value": "3",
+            "description": ""
+          },
+          {
+            "value": "4",
+            "description": ""
+          },
+          {
+            "value": "5",
+            "description": ""
+          },
+          {
+            "value": "6",
+            "description": ""
+          },
+          {
+            "value": "7",
+            "description": ""
+          },
+          {
+            "value": "8",
+            "description": ""
+          },
+          {
+            "value": "9",
+            "description": ""
+          },
+          {
+            "value": "G",
+            "description": ""
+          },
+          {
+            "value": "P",
+            "description": ""
+          },
+          {
+            "value": "B",
+            "description": ""
+          },
+          {
+            "value": "r",
+            "description": ""
+          },
+          {
+            "value": "a",
+            "description": ""
+          },
+          {
+            "value": "b",
+            "description": ""
+          },
+          {
+            "value": "c",
+            "description": ""
+          },
+          {
+            "value": "d",
+            "description": ""
+          },
+          {
+            "value": "e",
+            "description": ""
+          },
+          {
+            "value": "f",
+            "description": ""
+          },
+          {
+            "value": "g",
+            "description": ""
+          },
+          {
+            "value": "h",
+            "description": ""
+          },
+          {
+            "value": "-",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Talk",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "???",
+            "description": ""
+          },
+          {
+            "value": "L1 ",
+            "description": ""
+          },
+          {
+            "value": "L2 ",
+            "description": ""
+          },
+          {
+            "value": "L3 ",
+            "description": ""
+          },
+          {
+            "value": "L4 ",
+            "description": ""
+          },
+          {
+            "value": "L5 ",
+            "description": ""
+          },
+          {
+            "value": "L6 ",
+            "description": ""
+          },
+          {
+            "value": "L7 ",
+            "description": ""
+          },
+          {
+            "value": "L8 ",
+            "description": ""
+          },
+          {
+            "value": "L9 ",
+            "description": ""
+          },
+          {
+            "value": "L10",
+            "description": ""
+          },
+          {
+            "value": "L11",
+            "description": ""
+          },
+          {
+            "value": "L12",
+            "description": ""
+          },
+          {
+            "value": "L13",
+            "description": ""
+          },
+          {
+            "value": "L14",
+            "description": ""
+          },
+          {
+            "value": "L15",
+            "description": ""
+          },
+          {
+            "value": "L16",
+            "description": ""
+          },
+          {
+            "value": "L17",
+            "description": ""
+          },
+          {
+            "value": "L18",
+            "description": ""
+          },
+          {
+            "value": "L19",
+            "description": ""
+          },
+          {
+            "value": "L20",
+            "description": ""
+          },
+          {
+            "value": "L21",
+            "description": ""
+          },
+          {
+            "value": "L22",
+            "description": ""
+          },
+          {
+            "value": "L23",
+            "description": ""
+          },
+          {
+            "value": "L24",
+            "description": ""
+          },
+          {
+            "value": "Grn",
+            "description": ""
+          },
+          {
+            "value": "Labi",
+            "description": ""
+          },
+          {
+            "value": "Roof",
+            "description": ""
+          },
+          {
+            "value": "Pool",
+            "description": ""
+          },
+          {
+            "value": "Par ",
+            "description": ""
+          },
+          {
+            "value": "Par1",
+            "description": ""
+          },
+          {
+            "value": "Par2",
+            "description": ""
+          },
+          {
+            "value": "B  ",
+            "description": ""
+          },
+          {
+            "value": "B1 ",
+            "description": ""
+          },
+          {
+            "value": "B2 ",
+            "description": ""
+          },
+          {
+            "value": "L25",
+            "description": ""
+          },
+          {
+            "value": "L26",
+            "description": ""
+          },
+          {
+            "value": "L27",
+            "description": ""
+          },
+          {
+            "value": "L28",
+            "description": ""
+          },
+          {
+            "value": "L29",
+            "description": ""
+          },
+          {
+            "value": "L30",
+            "description": ""
+          },
+          {
+            "value": "L31",
+            "description": ""
+          },
+          {
+            "value": "L32",
+            "description": ""
+          },
+          {
+            "value": "L33",
+            "description": ""
+          },
+          {
+            "value": "L34",
+            "description": ""
+          },
+          {
+            "value": "L35",
+            "description": ""
+          },
+          {
+            "value": "L36",
+            "description": ""
+          },
+          {
+            "value": "L37",
+            "description": ""
+          },
+          {
+            "value": "L38",
+            "description": ""
+          },
+          {
+            "value": "L39",
+            "description": ""
+          },
+          {
+            "value": "L40",
+            "description": ""
+          },
+          {
+            "value": "L41",
+            "description": ""
+          },
+          {
+            "value": "L42",
+            "description": ""
+          },
+          {
+            "value": "L43",
+            "description": ""
+          },
+          {
+            "value": "L44",
+            "description": ""
+          },
+          {
+            "value": "L45",
+            "description": ""
+          },
+          {
+            "value": "L46",
+            "description": ""
+          },
+          {
+            "value": "L47",
+            "description": ""
+          },
+          {
+            "value": "L48",
+            "description": ""
+          },
+          {
+            "value": "L49",
+            "description": ""
+          },
+          {
+            "value": "L50",
+            "description": ""
+          },
+          {
+            "value": "Tr1",
+            "description": ""
+          },
+          {
+            "value": "Tr2",
+            "description": ""
+          },
+          {
+            "value": "Tr3",
+            "description": ""
+          },
+          {
+            "value": "Tr4",
+            "description": ""
+          },
+          {
+            "value": "Tr5",
+            "description": ""
+          },
+          {
+            "value": "Tr6",
+            "description": ""
+          },
+          {
+            "value": "Tr7",
+            "description": ""
+          },
+          {
+            "value": "Tr8",
+            "description": ""
+          },
+          {
+            "value": "Tr9",
+            "description": ""
+          },
+          {
+            "value": "Tr10",
+            "description": ""
+          },
+          {
+            "value": "Tr11",
+            "description": ""
+          },
+          {
+            "value": "Tr12",
+            "description": ""
+          },
+          {
+            "value": "Tr13",
+            "description": ""
+          },
+          {
+            "value": "Tr14",
+            "description": ""
+          },
+          {
+            "value": "Tr15",
+            "description": ""
+          },
+          {
+            "value": "Tr16",
+            "description": ""
+          },
+          {
+            "value": "Tr17",
+            "description": ""
+          },
+          {
+            "value": "Tr18",
+            "description": ""
+          },
+          {
+            "value": "Tr19",
+            "description": ""
+          },
+          {
+            "value": "Tr20",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting with an integer input value",
+        "label": "1CF Del UP",
+        "unit": "s",
+        "minValue": 0,
+        "maxValue": 5,
+        "step": 0.05,
+        "description": "",
+        "description_for_ai": ""
+      },
+      {
+        "type": "single setting with an integer input value",
+        "label": "1CF Del DN",
+        "unit": "s",
+        "minValue": 0,
+        "maxValue": 5,
+        "step": 0.05,
+        "description": "",
+        "description_for_ai": ""
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "CF3 jumpN",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "2",
+            "description": ""
+          },
+          {
+            "value": "1",
+            "description": ""
+          },
+          {
+            "value": "0",
+            "description": ""
+          },
+          {
+            "value": "-1",
+            "description": ""
+          },
+          {
+            "value": "-2",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "CF3 jump1",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "2",
+            "description": ""
+          },
+          {
+            "value": "1",
+            "description": ""
+          },
+          {
+            "value": "0",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Jp1 UP",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "Slow",
+            "description": ""
+          },
+          {
+            "value": "Rev",
+            "description": ""
+          },
+          {
+            "value": "Med",
+            "description": ""
+          },
+          {
+            "value": "Fast",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Jp1 DN",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "Slow",
+            "description": ""
+          },
+          {
+            "value": "Rev",
+            "description": ""
+          },
+          {
+            "value": "Med",
+            "description": ""
+          },
+          {
+            "value": "Fast",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting with an integer input value",
+        "label": "Offset UP",
+        "unit": "mm",
+        "minValue": -128,
+        "maxValue": 127,
+        "step": 1,
+        "description": "",
+        "description_for_ai": ""
+      },
+      {
+        "type": "single setting with an integer input value",
+        "label": "Offset DN",
+        "unit": "mm",
+        "minValue": -128,
+        "maxValue": 127,
+        "step": 1,
+        "description": "",
+        "description_for_ai": ""
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "label": "Phc_UnderV",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Phase Control"
+    ],
+    "description": "The minimum safe voltage for device operation",
+    "description_for_ai": "",
+    "unit": "v",
+    "minValue": 170,
+    "maxValue": 200,
+    "step": 1
+  },
+  {
+    "id": "52",
+    "label": "Phc_OverV",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Phase Control"
+    ],
+    "description": "The maximum voltage the device can withstand for proper operation",
+    "description_for_ai": "",
+    "unit": "v",
+    "minValue": 210,
+    "maxValue": 255,
+    "step": 1
+  },
+  {
+    "id": "53",
+    "label": "Under-V_Delay",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Phase Control"
+    ],
+    "description": "During the voltage drop fault detection time, the fault will not be detected until the set duration has elapsed.",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 10,
+    "step": 1
+  },
+  {
+    "id": "54",
+    "label": "N-Line",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Phase Control"
+    ],
+    "description": "Setting whether the elevator is three-phase or single-phase",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Only R",
+        "description": ""
+      },
+      {
+        "value": " R-S-T",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "label": "Mode",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Doublex"
+    ],
+    "description": "Setting the operation mode of the board in a duplex network in group mode, the board set to master has movement priority and tries to provide more service.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Off",
+        "description": ""
+      },
+      {
+        "value": "Slave",
+        "description": ""
+      },
+      {
+        "value": "Master",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "label": "OTF_time",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Doublex"
+    ],
+    "description": "In case of an elevator malfunction, the service exits duplex mode. This setting determines the duration after which it returns to duplex mode again.",
+    "description_for_ai": "",
+    "unit": "M",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 1
+  },
+  {
+    "id": "58",
+    "label": "TimeOut",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Doublex"
+    ],
+    "description": "The maximum time duration that if an elevator does not provide service due to specific issues, another elevator will take over. If this time is exceeded, the relevant warning is recorded, and the elevators exit group mode. After the specified time in time_otf, an attempt is made to return to group mode.",
+    "description_for_ai": "",
+    "unit": "s",
+    "minValue": 0,
+    "maxValue": 250,
+    "step": 1
+  },
+  {
+    "id": "6",
+    "label": "PB Setting",
+    "type": "array of setting groups. Each group may contain integer input settings and single-option selection settings. The user first selects a group item and then edits the settings within that group",
+    "navigationToMenu": [
+      "main>Full Set"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "settings": [
+      {
+        "type": "single setting with an integer input value",
+        "label": "Floor",
+        "unit": "",
+        "minValue": 1,
+        "maxValue": 100,
+        "step": 1,
+        "description": "",
+        "description_for_ai": ""
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door1",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door2",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door3",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Dir",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "VIP",
+            "description": ""
+          },
+          {
+            "value": "UP",
+            "description": ""
+          },
+          {
+            "value": "DOWN",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "label": "C Input",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec"
+    ],
+    "description": "Configuring inputs for programmable hardware / Each hardware input is connected to a software input. In case of a failure of one input, it can be configured to another hardware input.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": "استفاده نشود"
+      },
+      {
+        "value": "IN1",
+        "description": "ورودی ساخت افزاری in1"
+      },
+      {
+        "value": "IN2",
+        "description": ""
+      },
+      {
+        "value": "IN3",
+        "description": ""
+      },
+      {
+        "value": "IN4",
+        "description": ""
+      },
+      {
+        "value": "IN5",
+        "description": ""
+      },
+      {
+        "value": "IN6",
+        "description": ""
+      },
+      {
+        "value": "IN7",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "OVL",
+        "description": "ورودی نرمازفاری بار بیش"
+      },
+      {
+        "value": "FUL",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "PHC1",
+        "description": ""
+      },
+      {
+        "value": "PHC2",
+        "description": ""
+      },
+      {
+        "value": "PHC3",
+        "description": ""
+      },
+      {
+        "value": "DO1",
+        "description": ""
+      },
+      {
+        "value": "DO2",
+        "description": ""
+      },
+      {
+        "value": "DO3",
+        "description": ""
+      },
+      {
+        "value": "DC",
+        "description": ""
+      },
+      {
+        "value": "RES1",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "label": "C Input",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec"
+    ],
+    "description": "Configuring programmable hardware outputs / each hardware input is connected to a software output. In case of a failure of one output, it can be configured to another hardware input.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "CM1",
+        "description": ""
+      },
+      {
+        "value": "CM2",
+        "description": ""
+      },
+      {
+        "value": "PO1",
+        "description": ""
+      },
+      {
+        "value": "PO2",
+        "description": ""
+      },
+      {
+        "value": "PO3",
+        "description": ""
+      },
+      {
+        "value": "PO4",
+        "description": ""
+      },
+      {
+        "value": "S1",
+        "description": ""
+      },
+      {
+        "value": "S2",
+        "description": ""
+      },
+      {
+        "value": "S3",
+        "description": ""
+      },
+      {
+        "value": "S4",
+        "description": ""
+      },
+      {
+        "value": "S5",
+        "description": ""
+      },
+      {
+        "value": "S6",
+        "description": ""
+      },
+      {
+        "value": "S7",
+        "description": ""
+      },
+      {
+        "value": "S8",
+        "description": ""
+      },
+      {
+        "value": "S9",
+        "description": ""
+      },
+      {
+        "value": "S10",
+        "description": ""
+      },
+      {
+        "value": "S11",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "CLOSE1",
+        "description": ""
+      },
+      {
+        "value": "CLOSE2",
+        "description": ""
+      },
+      {
+        "value": "CLOSE3",
+        "description": ""
+      },
+      {
+        "value": "OPEN1",
+        "description": ""
+      },
+      {
+        "value": "OPEN2",
+        "description": ""
+      },
+      {
+        "value": "OPEN3",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "OVLO",
+        "description": ""
+      },
+      {
+        "value": "GANG",
+        "description": ""
+      },
+      {
+        "value": "AVA",
+        "description": ""
+      },
+      {
+        "value": "RES1",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "label": "In Type",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec"
+    ],
+    "description": "Setting the input type: If set to NC, the hardware and software input connection will be direct. If set to NO, the software input will be the opposite of the hardware.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "NO+",
+        "description": ""
+      },
+      {
+        "value": "NC",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "OVL",
+        "description": ""
+      },
+      {
+        "value": "FUL",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "PHC1",
+        "description": ""
+      },
+      {
+        "value": "PHC2",
+        "description": ""
+      },
+      {
+        "value": "PHC3",
+        "description": ""
+      },
+      {
+        "value": "DO1",
+        "description": ""
+      },
+      {
+        "value": "DO2",
+        "description": ""
+      },
+      {
+        "value": "DO3",
+        "description": ""
+      },
+      {
+        "value": "DC",
+        "description": ""
+      },
+      {
+        "value": "RES1",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "label": "Out Type",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec"
+    ],
+    "description": "Setting the type of connection for hardware output and software output: if set to NC, the connection will be direct, and setting it to NO will cause it to be reversed.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "NO+",
+        "description": ""
+      },
+      {
+        "value": "NC",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "CLOSE1",
+        "description": ""
+      },
+      {
+        "value": "CLOSE2",
+        "description": ""
+      },
+      {
+        "value": "CLOSE3",
+        "description": ""
+      },
+      {
+        "value": "OPEN1",
+        "description": ""
+      },
+      {
+        "value": "OPEN2",
+        "description": ""
+      },
+      {
+        "value": "OPEN3",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "OVLO",
+        "description": ""
+      },
+      {
+        "value": "GANG",
+        "description": ""
+      },
+      {
+        "value": "AVA",
+        "description": ""
+      },
+      {
+        "value": "RES1",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "label": "Active_Light",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "66",
+    "label": "Car_PB_Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Parallel",
+        "description": ""
+      },
+      {
+        "value": "Serial Ext",
+        "description": ""
+      },
+      {
+        "value": "Ravis Panel",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "label": "C_NUM_Parallel",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "CM1",
+        "description": ""
+      },
+      {
+        "value": "CM2",
+        "description": ""
+      },
+      {
+        "value": "PO1",
+        "description": ""
+      },
+      {
+        "value": "PO2",
+        "description": ""
+      },
+      {
+        "value": "PO3",
+        "description": ""
+      },
+      {
+        "value": "PO4",
+        "description": ""
+      },
+      {
+        "value": "S1",
+        "description": ""
+      },
+      {
+        "value": "S2",
+        "description": ""
+      },
+      {
+        "value": "S3",
+        "description": ""
+      },
+      {
+        "value": "S4",
+        "description": ""
+      },
+      {
+        "value": "S5",
+        "description": ""
+      },
+      {
+        "value": "S6",
+        "description": ""
+      },
+      {
+        "value": "S7",
+        "description": ""
+      },
+      {
+        "value": "S8",
+        "description": ""
+      },
+      {
+        "value": "S9",
+        "description": ""
+      },
+      {
+        "value": "S10",
+        "description": ""
+      },
+      {
+        "value": "S11",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "RA",
+        "description": ""
+      },
+      {
+        "value": "RB",
+        "description": ""
+      },
+      {
+        "value": "RC",
+        "description": ""
+      },
+      {
+        "value": "RD",
+        "description": ""
+      },
+      {
+        "value": "RE",
+        "description": ""
+      },
+      {
+        "value": "RF",
+        "description": ""
+      },
+      {
+        "value": "RG",
+        "description": ""
+      },
+      {
+        "value": "UP",
+        "description": ""
+      },
+      {
+        "value": "DN",
+        "description": ""
+      },
+      {
+        "value": "LA",
+        "description": ""
+      },
+      {
+        "value": "LB",
+        "description": ""
+      },
+      {
+        "value": "LC",
+        "description": ""
+      },
+      {
+        "value": "LD",
+        "description": ""
+      },
+      {
+        "value": "LE",
+        "description": ""
+      },
+      {
+        "value": "LF",
+        "description": ""
+      },
+      {
+        "value": "LG",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "label": "Sleep_Light",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "7",
+    "label": "PB Setting",
+    "type": "array of setting groups. Each group may contain integer input settings and single-option selection settings. The user first selects a group item and then edits the settings within that group",
+    "navigationToMenu": [
+      "main>Full Set"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "settings": [
+      {
+        "type": "single setting with an integer input value",
+        "label": "Floor",
+        "unit": "",
+        "minValue": 1,
+        "maxValue": 100,
+        "step": 1,
+        "description": "",
+        "description_for_ai": ""
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door1",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door2",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "Door3",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "En",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "single setting where the user selects one option from a predefined list",
+        "label": "type",
+        "description": "",
+        "description_for_ai": "",
+        "options": [
+          {
+            "value": "---",
+            "description": ""
+          },
+          {
+            "value": "VIP",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "label": "Car_PB_Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Push Button"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Parallel",
+        "description": ""
+      },
+      {
+        "value": "Ravis Panel",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "label": "C_PB_Parallel",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Push Button"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "PB1",
+        "description": ""
+      },
+      {
+        "value": "PB2",
+        "description": ""
+      },
+      {
+        "value": "PB3",
+        "description": ""
+      },
+      {
+        "value": "PB4",
+        "description": ""
+      },
+      {
+        "value": "PB5",
+        "description": ""
+      },
+      {
+        "value": "PB6",
+        "description": ""
+      },
+      {
+        "value": "PB7",
+        "description": ""
+      },
+      {
+        "value": "PB8",
+        "description": ""
+      },
+      {
+        "value": "PB9",
+        "description": ""
+      },
+      {
+        "value": "PB10",
+        "description": ""
+      },
+      {
+        "value": "PB11",
+        "description": ""
+      },
+      {
+        "value": "PB12",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "label": "Car_PB_Cancel",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Carcodec>Push Button"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Disable",
+        "description": ""
+      },
+      {
+        "value": "Enable",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "label": "Prog Input",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board"
+    ],
+    "description": "Configuring inputs for programmable hardware / Each hardware input is connected to a software input, and in case of a failure of an input, it can be configured to another hardware input.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "CF3",
+        "description": ""
+      },
+      {
+        "value": "1CF",
+        "description": ""
+      },
+      {
+        "value": "CAN",
+        "description": ""
+      },
+      {
+        "value": "CA1",
+        "description": ""
+      },
+      {
+        "value": "IN1",
+        "description": ""
+      },
+      {
+        "value": "IN2",
+        "description": ""
+      },
+      {
+        "value": "IN3",
+        "description": ""
+      },
+      {
+        "value": "IN4",
+        "description": ""
+      },
+      {
+        "value": "IN5",
+        "description": ""
+      },
+      {
+        "value": "IN6",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "CF3",
+        "description": ""
+      },
+      {
+        "value": "1CF",
+        "description": ""
+      },
+      {
+        "value": "CAN",
+        "description": ""
+      },
+      {
+        "value": "CA1",
+        "description": ""
+      },
+      {
+        "value": "IFN",
+        "description": ""
+      },
+      {
+        "value": "IF1",
+        "description": ""
+      },
+      {
+        "value": "FLTDR",
+        "description": ""
+      },
+      {
+        "value": "RLS",
+        "description": ""
+      },
+      {
+        "value": "DRC",
+        "description": ""
+      },
+      {
+        "value": "FIRE",
+        "description": ""
+      },
+      {
+        "value": "OVL",
+        "description": ""
+      },
+      {
+        "value": "FUL",
+        "description": ""
+      },
+      {
+        "value": "RELUP",
+        "description": ""
+      },
+      {
+        "value": "RELDN",
+        "description": ""
+      },
+      {
+        "value": "ZADO",
+        "description": ""
+      },
+      {
+        "value": "Ready",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "label": "Prog Output",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board"
+    ],
+    "description": "Configuring outputs of programmable hardware / each hardware input is connected to a software output. In case of a failure of an output, it can be configured to another hardware input.",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "O+-",
+        "description": ""
+      },
+      {
+        "value": "PO1",
+        "description": ""
+      },
+      {
+        "value": "PO2",
+        "description": ""
+      },
+      {
+        "value": "PO3",
+        "description": ""
+      },
+      {
+        "value": "PO4",
+        "description": ""
+      },
+      {
+        "value": "OC1",
+        "description": ""
+      },
+      {
+        "value": "OC2",
+        "description": ""
+      },
+      {
+        "value": "OC3",
+        "description": ""
+      },
+      {
+        "value": "OC4",
+        "description": ""
+      },
+      {
+        "value": "OC5",
+        "description": ""
+      },
+      {
+        "value": "OC6",
+        "description": ""
+      },
+      {
+        "value": "OC7",
+        "description": ""
+      },
+      {
+        "value": "S1",
+        "description": ""
+      },
+      {
+        "value": "S2",
+        "description": ""
+      },
+      {
+        "value": "S3",
+        "description": ""
+      },
+      {
+        "value": "S4",
+        "description": ""
+      },
+      {
+        "value": "S5",
+        "description": ""
+      },
+      {
+        "value": "S6",
+        "description": ""
+      },
+      {
+        "value": "S7",
+        "description": ""
+      },
+      {
+        "value": "S8",
+        "description": ""
+      },
+      {
+        "value": "S9",
+        "description": ""
+      },
+      {
+        "value": "S10",
+        "description": ""
+      },
+      {
+        "value": "S11",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "MUP",
+        "description": ""
+      },
+      {
+        "value": "MDN",
+        "description": ""
+      },
+      {
+        "value": "MV0",
+        "description": ""
+      },
+      {
+        "value": "MV1",
+        "description": ""
+      },
+      {
+        "value": "MV2",
+        "description": ""
+      },
+      {
+        "value": "TC",
+        "description": ""
+      },
+      {
+        "value": "ST.DL",
+        "description": ""
+      },
+      {
+        "value": "URA",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "ENOUT",
+        "description": ""
+      },
+      {
+        "value": "RELAY",
+        "description": ""
+      },
+      {
+        "value": "UPSOUT",
+        "description": ""
+      },
+      {
+        "value": "UPSREF",
+        "description": ""
+      },
+      {
+        "value": "ADOOUT",
+        "description": ""
+      },
+      {
+        "value": "1CFOUT",
+        "description": ""
+      },
+      {
+        "value": "DRV.RST",
+        "description": ""
+      },
+      {
+        "value": "ERS",
+        "description": ""
+      },
+      {
+        "value": "ENR",
+        "description": ""
+      },
+      {
+        "value": "PH-F",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      },
+      {
+        "value": "CLOSE1",
+        "description": ""
+      },
+      {
+        "value": "CLOSE2",
+        "description": ""
+      },
+      {
+        "value": "CLOSE3",
+        "description": ""
+      },
+      {
+        "value": "CLOSE4",
+        "description": ""
+      },
+      {
+        "value": "CLOSE5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "label": "Input Type",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "NO+",
+        "description": ""
+      },
+      {
+        "value": "NC",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "CF3",
+        "description": ""
+      },
+      {
+        "value": "1CF",
+        "description": ""
+      },
+      {
+        "value": "CAN",
+        "description": ""
+      },
+      {
+        "value": "CA1",
+        "description": ""
+      },
+      {
+        "value": "IFN",
+        "description": ""
+      },
+      {
+        "value": "IF1",
+        "description": ""
+      },
+      {
+        "value": "FLTDR",
+        "description": ""
+      },
+      {
+        "value": "RLS",
+        "description": ""
+      },
+      {
+        "value": "DRC",
+        "description": ""
+      },
+      {
+        "value": "FIRE",
+        "description": ""
+      },
+      {
+        "value": "OVL",
+        "description": ""
+      },
+      {
+        "value": "FUL",
+        "description": ""
+      },
+      {
+        "value": "RELUP",
+        "description": ""
+      },
+      {
+        "value": "RELDN",
+        "description": ""
+      },
+      {
+        "value": "ZADO",
+        "description": ""
+      },
+      {
+        "value": "Ready",
+        "description": ""
+      },
+      {
+        "value": "RES2",
+        "description": ""
+      },
+      {
+        "value": "RES3",
+        "description": ""
+      },
+      {
+        "value": "RES4",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "label": "Output Type",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "NO+",
+        "description": ""
+      },
+      {
+        "value": "NC",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "MUP",
+        "description": ""
+      },
+      {
+        "value": "MDN",
+        "description": ""
+      },
+      {
+        "value": "MV0",
+        "description": ""
+      },
+      {
+        "value": "MV1",
+        "description": ""
+      },
+      {
+        "value": "MV2",
+        "description": ""
+      },
+      {
+        "value": "TC",
+        "description": ""
+      },
+      {
+        "value": "ST.DL",
+        "description": ""
+      },
+      {
+        "value": "URA",
+        "description": ""
+      },
+      {
+        "value": "FAN",
+        "description": ""
+      },
+      {
+        "value": "ENOUT",
+        "description": ""
+      },
+      {
+        "value": "RELAY",
+        "description": ""
+      },
+      {
+        "value": "UPSOUT",
+        "description": ""
+      },
+      {
+        "value": "UPSREF",
+        "description": ""
+      },
+      {
+        "value": "ADOOUT",
+        "description": ""
+      },
+      {
+        "value": "1CFOUT",
+        "description": ""
+      },
+      {
+        "value": "DRV.RST",
+        "description": ""
+      },
+      {
+        "value": "ERS",
+        "description": ""
+      },
+      {
+        "value": "ENR",
+        "description": ""
+      },
+      {
+        "value": "PH-F",
+        "description": ""
+      },
+      {
+        "value": "RES5",
+        "description": ""
+      },
+      {
+        "value": "CLOSE1",
+        "description": ""
+      },
+      {
+        "value": "CLOSE2",
+        "description": ""
+      },
+      {
+        "value": "CLOSE3",
+        "description": ""
+      },
+      {
+        "value": "CLOSE4",
+        "description": ""
+      },
+      {
+        "value": "CLOSE5",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "label": "Active_Light",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "80",
+    "label": "Main_PB_Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Parallel",
+        "description": ""
+      },
+      {
+        "value": "Ravis EXT ",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "label": "Main_NUM_Parallel",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "O+-",
+        "description": ""
+      },
+      {
+        "value": "PO1",
+        "description": ""
+      },
+      {
+        "value": "PO2",
+        "description": ""
+      },
+      {
+        "value": "PO3",
+        "description": ""
+      },
+      {
+        "value": "PO4",
+        "description": ""
+      },
+      {
+        "value": "OC1",
+        "description": ""
+      },
+      {
+        "value": "OC2",
+        "description": ""
+      },
+      {
+        "value": "OC3",
+        "description": ""
+      },
+      {
+        "value": "OC4",
+        "description": ""
+      },
+      {
+        "value": "OC5",
+        "description": ""
+      },
+      {
+        "value": "OC6",
+        "description": ""
+      },
+      {
+        "value": "OC7",
+        "description": ""
+      },
+      {
+        "value": "S1",
+        "description": ""
+      },
+      {
+        "value": "S2",
+        "description": ""
+      },
+      {
+        "value": "S3",
+        "description": ""
+      },
+      {
+        "value": "S4",
+        "description": ""
+      },
+      {
+        "value": "S5",
+        "description": ""
+      },
+      {
+        "value": "S6",
+        "description": ""
+      },
+      {
+        "value": "S7",
+        "description": ""
+      },
+      {
+        "value": "S8",
+        "description": ""
+      },
+      {
+        "value": "S9",
+        "description": ""
+      },
+      {
+        "value": "S10",
+        "description": ""
+      },
+      {
+        "value": "S11",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "RA",
+        "description": ""
+      },
+      {
+        "value": "RB",
+        "description": ""
+      },
+      {
+        "value": "RC",
+        "description": ""
+      },
+      {
+        "value": "RD",
+        "description": ""
+      },
+      {
+        "value": "RE",
+        "description": ""
+      },
+      {
+        "value": "RF",
+        "description": ""
+      },
+      {
+        "value": "RG",
+        "description": ""
+      },
+      {
+        "value": "UP",
+        "description": ""
+      },
+      {
+        "value": "DN",
+        "description": ""
+      },
+      {
+        "value": "LA",
+        "description": ""
+      },
+      {
+        "value": "LB",
+        "description": ""
+      },
+      {
+        "value": "LC",
+        "description": ""
+      },
+      {
+        "value": "LD",
+        "description": ""
+      },
+      {
+        "value": "LE",
+        "description": ""
+      },
+      {
+        "value": "LF",
+        "description": ""
+      },
+      {
+        "value": "LG",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "label": "Sleep_Light",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Numrator"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "%",
+    "minValue": 0,
+    "maxValue": 100,
+    "step": 5
+  },
+  {
+    "id": "84",
+    "label": "Car_PB_Type",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Push Buttons"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Parallel",
+        "description": ""
+      },
+      {
+        "value": "Ravis Panel",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "label": "PB_Parallel",
+    "type": "collection of settings where each setting has a label and selects one option from the same shared option list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Push Buttons"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "---",
+        "description": ""
+      },
+      {
+        "value": "H1",
+        "description": ""
+      },
+      {
+        "value": "H2",
+        "description": ""
+      },
+      {
+        "value": "H3",
+        "description": ""
+      },
+      {
+        "value": "H4",
+        "description": ""
+      },
+      {
+        "value": "H5",
+        "description": ""
+      },
+      {
+        "value": "H6",
+        "description": ""
+      },
+      {
+        "value": "H7",
+        "description": ""
+      },
+      {
+        "value": "H8",
+        "description": ""
+      },
+      {
+        "value": "H9",
+        "description": ""
+      },
+      {
+        "value": "H10",
+        "description": ""
+      },
+      {
+        "value": "H11",
+        "description": ""
+      },
+      {
+        "value": "H12",
+        "description": ""
+      }
+    ],
+    "itemLabels": [
+      {
+        "value": "PB1",
+        "description": ""
+      },
+      {
+        "value": "PB2",
+        "description": ""
+      },
+      {
+        "value": "PB3",
+        "description": ""
+      },
+      {
+        "value": "PB4",
+        "description": ""
+      },
+      {
+        "value": "PB5",
+        "description": ""
+      },
+      {
+        "value": "PB6",
+        "description": ""
+      },
+      {
+        "value": "PB7",
+        "description": ""
+      },
+      {
+        "value": "PB8",
+        "description": ""
+      },
+      {
+        "value": "PB9",
+        "description": ""
+      },
+      {
+        "value": "PB10",
+        "description": ""
+      },
+      {
+        "value": "PB11",
+        "description": ""
+      },
+      {
+        "value": "PB12",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "label": "Main_PB_Cancel",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>Full Set>Advance>Hardware>Main Board>Push Buttons"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Disable",
+        "description": ""
+      },
+      {
+        "value": "Enable",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "label": "IOT_Serial",
+    "type": "single setting where the user selects one option from a predefined list",
+    "navigationToMenu": [
+      "main>IOT"
+    ],
+    "description": "Which serial 485 should the IoT system use to receive the internet?",
+    "description_for_ai": "",
+    "options": [
+      {
+        "value": "Dis",
+        "description": ""
+      },
+      {
+        "value": "Dublex",
+        "description": ""
+      },
+      {
+        "value": "HallEx",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "label": "Walk Lenth",
+    "type": "single setting with an integer input value",
+    "navigationToMenu": [
+      "main>Quick Set>Landing",
+      "main>Full Set>General>Landing"
+    ],
+    "description": "",
+    "description_for_ai": "",
+    "unit": "Cm",
+    "minValue": 5,
+    "maxValue": 100,
+    "step": 1
+  }
+]
